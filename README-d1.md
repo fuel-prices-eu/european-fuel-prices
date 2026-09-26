@@ -1,8 +1,8 @@
 # D1 — EU Weekly Oil Bulletin, weekly panel
 
-> Copy of https://www.fuel-prices.eu/research/data/d1-eu-weekly-bulletin/README.md . Links to `CITATION.cff` "in the parent folder" refer to the site; this copy has its own `CITATION.cff` with the Zenodo DOI.
+> Copy of https://www.fuel-prices.eu/research/data/d1-eu-weekly-bulletin/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-09.4 · built 2026-09-26T15:03Z · https://www.fuel-prices.eu/research/
+Version 2026-09.5 · data built 2026-09-26T15:58Z · https://www.fuel-prices.eu/research/
 
 National average consumer prices of Euro-super 95 petrol and automotive diesel, **all taxes included**, as reported every week
 by each EU member state to the European Commission (DG ENER) in the Weekly Oil Bulletin, compiled into one panel by fuel-prices.eu.
@@ -20,8 +20,8 @@ a single difference stops the build. Weeks the Commission revises after publicat
 
 ## Files
 
-- `fp-d1-eu-weekly-panel.zip` / `.csv.gz` / `.parquet` — one row per country and week.
-- `fp-d1-eu-weighted-average.zip` / `.csv.gz` / `.parquet` — the Commission's own consumption-weighted averages for the EU27 and the euro area (2005-01-03 to 2026-09-21, 2,170 rows).
+- `fp-d1-eu-weekly-panel.zip` / `.csv.gz` / `.parquet` (on the site; samples in `sample/`) — one row per country and week.
+- `fp-d1-eu-weighted-average.zip` / `.csv.gz` / `.parquet` (on the site; samples in `sample/`) — the Commission's own consumption-weighted averages for the EU27 and the euro area (2005-01-03 to 2026-09-21, 2,170 rows).
 
 ## Columns — `fp-d1-eu-weekly-panel`
 
@@ -48,7 +48,7 @@ a single difference stops the build. Weeks the Commission revises after publicat
 
 ## Changes made by fuel-prices.eu (CC BY 4.0 requires us to indicate them)
 
-- Weeks where a country reported no price are **empty, never 0**.
+- Weeks for which the Commission file has no price for a country are **not in the file** (no row; for example Croatia before 2013, Bulgaria and Romania before 2008, the United Kingdom after 2020). Where one of the two fuels is missing in a week, that cell is **empty, never 0**.
 - The Commission publishes EUR per 1000 L; we divide by 1000 and round half-up to 3 decimals (EUR per litre).
 - National-currency prices are **derived** with `eur_rate` (see above); the bulletin's own national-currency tables can differ in the last decimal.
 - The **United Kingdom** (2005-01-03 to 2020-12-21) is taken directly from the Commission file. It left the EU on 31 January 2020; the Commission kept
@@ -59,27 +59,14 @@ a single difference stops the build. Weeks the Commission revises after publicat
 
 ## File formats
 
-Every table comes in three formats with identical content:
-
-- **`.zip`** — one CSV inside; opens with a double-click on macOS and Windows. **On a Mac or PC, download the ZIP.**
-- **`.csv.gz`** — the same CSV, gzip-compressed, for scripts (pandas, R, Python): `pandas.read_csv(url, comment="#")` reads it directly.
-  macOS Archive Utility cannot open these files (it reports "Error 79"); use the ZIP instead.
-- **`.parquet`** — for scripts; column types and the source notes are in the file metadata.
-
-The CSV ends with a few comment lines starting with `#` that name the source.
-
-In the CSV and ZIP only, a text cell that begins with `=`, `+`, `-`, `@`, a tab or a carriage return starts with an apostrophe (`'`),
-so that spreadsheet software does not run it as a formula (OWASP "CSV injection"). Numbers are never changed. Example: the Spanish
-brand `+B Energias` is `'+B Energias` in the CSV and `+B Energias` in the Parquet; strip a leading `'` if you need the raw text.
-
-Download each file once; automated bulk downloading is rate-limited (bursts of more than 60 files in 10 minutes are blocked for an hour).
-For bulk or scheduled access, write to hi@fuel-prices.eu.
+This repository holds **samples only** (`sample/*.csv`, a few hundred rows of each table). The full files (`.zip`, `.csv.gz`, `.parquet`) are on https://www.fuel-prices.eu/research/data/ and, as `.zip` + `.parquet`, in the Zenodo record (DOI in the main README).
 
 ## How to cite
 
-> fuel-prices.eu (2026). *EU Weekly Oil Bulletin panel* (Version 2026-09.4) [Data set]. https://www.fuel-prices.eu/research/
+> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-09.5) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22978599
+
+This file describes one table of that record. Please cite the DOI, so that citations are not split between copies.
 
 Short credit line: **Source: fuel-prices.eu (https://www.fuel-prices.eu/research/)**
 
-A `CITATION.cff` file is in the parent folder: https://www.fuel-prices.eu/research/data/CITATION.cff
-
+A `CITATION.cff` file is included in this copy.

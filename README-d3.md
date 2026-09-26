@@ -1,25 +1,26 @@
 # D3 — Regional daily fuel price statistics
 
-> Copy of https://www.fuel-prices.eu/research/data/d3-regional-daily/README.md . Links to `CITATION.cff` "in the parent folder" refer to the site; this copy has its own `CITATION.cff` with the Zenodo DOI.
+> Copy of https://www.fuel-prices.eu/research/data/d3-regional-daily/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-09.4 · built 2026-09-26T15:03Z · https://www.fuel-prices.eu/research/
+Version 2026-09.5 · data built 2026-09-26T15:58Z · https://www.fuel-prices.eu/research/
 
-The D2 statistics per region, where the source lets us place a station in a region. Same method, same exclusions and the same column
-meanings as D2 (see that README), plus `region_type` and `region`. **Our statistics are CC BY 4.0; the source data keep their terms.**
+The D2 statistics per region, where the source lets us place a station in a region. Same method (unweighted statistics, the same daily
+snapshot times in Bucharest time), same exclusions (Australia and Türkiye are excluded pending licence review since version 2026-09.5) and the
+same column meanings as D2 (see that README), plus `region_type`, `region` and `flag` (`few_stations` = 3 to 9 stations that day: the regional
+figure rests on very few prices). **Our statistics are CC BY 4.0; the source data keep their terms.**
 
 | | |
 |---|---|
 | Period | 2024-07-03 to 2026-09-26 |
-| Countries | 9 |
-| Regions | 495 |
-| Rows | 219,565 |
+| Countries | 7 |
+| Regions | 408 |
+| Rows | 195,485 |
 | Frequency | daily |
 
 ## Regions
 
 | code | region type | regions | first day | how the region is assigned |
 |---|---|---|---|---|
-| AU | state/territory | 5 | 2026-07-13 | state of the feed |
 | ES | province | 52 | 2026-06-26 | province from the postal code (INE code) |
 | FR | département | 96 | 2026-06-06 | département from the station postal code |
 | GB | region / nation | 4 | 2026-06-26 | nation as published by the feed |
@@ -27,34 +28,20 @@ meanings as D2 (see that README), plus `region_type` and `region`. **Our statist
 | IT | province | 106 | 2026-06-24 | province (sigla) from MIMIT station register |
 | LT | municipality | 57 | 2026-04-08 | municipality as published by the feed |
 | RO | county (județ) | 42 | 2026-05-21 | county from the station municipality (SIRUTA), nearest locality as fallback |
-| TR | province | 82 | 2026-06-24 | published by the source per province |
 
 A region-day is published only with at least **3 stations** (station markets). Greece: the source publishes one average per prefecture (`n` empty).
-Türkiye: one price per province (`n` empty). Other markets (AT, DK, HR, IS, SI and the single-price markets) have no reliable regional key in the feeds and are only in D2.
+Other markets (AT, DK, HR, IS, SI and the single-price markets) have no reliable regional key in the feeds and are only in D2.
 
 ## File formats
 
-Every table comes in three formats with identical content:
-
-- **`.zip`** — one CSV inside; opens with a double-click on macOS and Windows. **On a Mac or PC, download the ZIP.**
-- **`.csv.gz`** — the same CSV, gzip-compressed, for scripts (pandas, R, Python): `pandas.read_csv(url, comment="#")` reads it directly.
-  macOS Archive Utility cannot open these files (it reports "Error 79"); use the ZIP instead.
-- **`.parquet`** — for scripts; column types and the source notes are in the file metadata.
-
-The CSV ends with a few comment lines starting with `#` that name the source.
-
-In the CSV and ZIP only, a text cell that begins with `=`, `+`, `-`, `@`, a tab or a carriage return starts with an apostrophe (`'`),
-so that spreadsheet software does not run it as a formula (OWASP "CSV injection"). Numbers are never changed. Example: the Spanish
-brand `+B Energias` is `'+B Energias` in the CSV and `+B Energias` in the Parquet; strip a leading `'` if you need the raw text.
-
-Download each file once; automated bulk downloading is rate-limited (bursts of more than 60 files in 10 minutes are blocked for an hour).
-For bulk or scheduled access, write to hi@fuel-prices.eu.
+This repository holds **samples only** (`sample/*.csv`, a few hundred rows of each table). The full files (`.zip`, `.csv.gz`, `.parquet`) are on https://www.fuel-prices.eu/research/data/ and, as `.zip` + `.parquet`, in the Zenodo record (DOI in the main README).
 
 ## How to cite
 
-> fuel-prices.eu (2026). *Regional daily fuel price statistics* (Version 2026-09.4) [Data set]. https://www.fuel-prices.eu/research/
+> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-09.5) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22978599
+
+This file describes one table of that record. Please cite the DOI, so that citations are not split between copies.
 
 Short credit line: **Source: fuel-prices.eu (https://www.fuel-prices.eu/research/)**
 
-A `CITATION.cff` file is in the parent folder: https://www.fuel-prices.eu/research/data/CITATION.cff
-
+A `CITATION.cff` file is included in this copy.

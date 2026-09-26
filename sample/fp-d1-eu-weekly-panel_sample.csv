@@ -274,4 +274,4 @@ SK,Slovakia,2026-09-21,True,1.853,1.95,EUR,1.0,,1.853,1.95
 # Underlying data: EU Weekly Oil Bulletin, European Commission (CC BY 4.0); compiled by fuel-prices.eu. Values checked cell by cell against the Commission history file at build time.
 # Prices per litre, all taxes included. eur_rate = units of national currency per 1 EUR: fixed parity from the date the irrevocable conversion rate was fixed (HRK 7.53450 from 12 July 2022, BGN 1.95583 from 8 July 2025, and likewise for the earlier euro changeovers), otherwise the ECB euro reference rate of the bulletin date (or the last fixing before it). Local prices = EUR price x eur_rate.
 # United Kingdom 2005-2020: taken directly from the Commission file; in_eu = false from 1 February 2020 (the Commission kept publishing UK prices during the transition period, to 21 December 2020).
-# Empty cells = no price reported for that week (never zero). Version 2026-09.4, built 2026-09-26T14:57Z.
+# Weeks for which the Commission file has no price for a country are not in the file (no row); an empty cell = no price for that fuel that week (never zero). Version 2026-09.5, built 2026-09-26T15:58Z.

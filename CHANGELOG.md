@@ -5,6 +5,19 @@ This copy contains D1–D3 only. The entries below are the changelog of the sour
 Versions are named `YYYY-MM` (a suffix such as `.1` marks a revision within the month). Within a month, files are rebuilt on schedule (D1 weekly, D2/D3 daily, D4 monthly); the version changes when
 the method or the coverage changes. Every change of method is listed here.
 
+## 2026-09.5 — licences of the sources, fuel codes, method notes (26 September 2026, night)
+
+- **Australia, Türkiye and Sweden are excluded from D2 and D3 pending licence review.** Their rows are no longer in the files
+  (Australia 371 D2 rows and 1,448 D3 rows; Türkiye 276 D2 rows and 22,632 D3 rows; Sweden 13,200 D2 rows, as of 26 September 2026). They may return in a later version once the terms of their sources are verified; the live pages of fuel-prices.eu are not affected.
+- **United Kingdom:** `source_terms` now states the licence of the UK Fuel Finder data, the Open Government Licence v3.0, with the attribution statement it
+  requires ("Contains public sector information licensed under the Open Government Licence v3.0"); it wrongly said "No licence published by the source".
+- **Fuel codes no longer cross fuel families:** UK premium diesel is now `diesel_premium` (was `sp98`). New column **`fuel_family`**
+  (`petrol`, `diesel`, `lpg`, `ethanol_e85`) in D2 and D3, for comparisons across markets. Figures unchanged.
+- **D3:** new column `flag` = `few_stations` when a region-day rests on 3 to 9 stations.
+- **Method notes** in the READMEs and CSV footers: the statistics are **unweighted** (arithmetic mean of the stations), and the snapshot time of
+  each feed is given in Bucharest time (`date` = calendar day in Europe/Bucharest).
+- The citation recommended for D1–D3 is now the Zenodo DOI 10.5281/zenodo.22978599. D4 files are unchanged and still carry version 2026-09.4.
+
 ## 2026-09.4 — spreadsheet-safe text cells in the CSV files (26 September 2026, evening)
 
 - In the CSV and ZIP files, a text cell that begins with `=`, `+`, `-`, `@`, a tab or a carriage return now starts with an apostrophe (`'`),
@@ -129,14 +142,14 @@ the method or the coverage changes. Every change of method is listed here.
 ## 2026-09 — first release (26 September 2026)
 
 - D1 EU Weekly Oil Bulletin panel, 2005-01-03 to 2026-09-21, 26 countries with prices (Portugal excluded) and 4 empty UK weeks, plus the Commission's EU27 and euro-area weighted averages.
-- D2 national daily statistics for 20 markets; D3 regional daily statistics for 9 countries; D4 station-level monthly files for France, Italy, Spain and Croatia.
+- D2 national daily statistics for 17 markets; D3 regional daily statistics for 7 countries; D4 station-level monthly files for France, Italy, Spain and Croatia.
 - Excluded from all files: Portugal, Andorra. Germany appears only as bulletin rows in D1.
 - Exchange rates: ECB euro reference rates (daily fixing of the date, or the last fixing before it). The bulletin exchange rates stored in our
   database were **not** used: for older weeks they are stored with only 3 decimals (e.g. HUF 0.002 EUR), which would distort national-currency prices.
 
 ### Known gaps
 
-- Station-level daily snapshots cover the whole national network only from: AT 2026-07-22, AU 2026-08-03, DK 2026-07-10, ES 2026-06-26, FR 2026-06-06, GB 2026-06-26, HR 2026-08-05, IS 2025-06-02, IT 2026-06-25, LT 2026-04-08, RO 2026-05-21, SI 2026-08-05. Earlier isolated records are not published.
+- Station-level daily snapshots cover the whole national network only from: AT 2026-07-22, DK 2026-07-10, ES 2026-06-26, FR 2026-06-06, GB 2026-06-26, HR 2026-08-05, IS 2025-06-02, IT 2026-06-25, LT 2026-04-08, RO 2026-05-21, SI 2026-08-05. Earlier isolated records are not published.
 - Regional statistics for France, Italy and Spain start later than the national ones (ES 2026-06-26, FR 2026-06-06, IT 2026-06-24), because older snapshots refer to station
   identifiers that the feeds have since replaced.
 - `source_updated_at` and `collected_at` (D4) exist from 26 September 2026 onward.

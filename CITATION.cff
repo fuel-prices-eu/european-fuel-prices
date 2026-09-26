@@ -5,7 +5,7 @@ type: dataset
 authors:
   - name: "fuel-prices.eu"
     website: "https://www.fuel-prices.eu/"
-version: "2026-09.4"
+version: "2026-09.5"
 date-released: "2026-09-26"
 url: "https://www.fuel-prices.eu/research/"
 repository-artifact: "https://www.fuel-prices.eu/research/data/"
