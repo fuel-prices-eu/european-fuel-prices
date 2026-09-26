@@ -6,9 +6,7 @@ DOI: `10.5281/zenodo.22978599` (reserved on Zenodo; it becomes active when the Z
 
 This repository holds the documentation and small samples; it **supplements** (IsSupplementTo) the Zenodo record `10.5281/zenodo.22978599`, which holds the full files. Please cite the DOI, not this repository.
 
-Free fuel price data for research from [fuel-prices.eu](https://www.fuel-prices.eu/research/): the European Commission's Weekly Oil Bulletin as one weekly panel since 2005 (D1),
-and daily national (D2) and regional (D3) statistics of pump prices computed from official national station feeds.
-Version **2026-09.4**, files built 2026-09-26T15:03Z. The same files are published on https://www.fuel-prices.eu/research/ (with station-level data, D4, which is not included here).
+Free fuel price data for research from [fuel-prices.eu](https://www.fuel-prices.eu/research/): the European Commission's Weekly Oil Bulletin as one weekly panel since 2005 (D1), and daily national (D2) and regional (D3) statistics of pump prices computed from official national station feeds. Version **2026-09.4**, files built 2026-09-26T15:03Z. The same files are published on https://www.fuel-prices.eu/research/ (with station-level data, D4, which is not included here).
 
 ## Data sets
 
@@ -30,8 +28,7 @@ Version **2026-09.4**, files built 2026-09-26T15:03Z. The same files are publish
 
 This repository holds only documentation and samples. Full files: the links above (fuel-prices.eu) and the Zenodo record (DOI above). Integrity: SHA-256 of every file on the site in https://www.fuel-prices.eu/research/data/checksums.txt
 
-Each table comes as CSV and Parquet with identical content. The CSV ends with a few comment lines starting with `#` that name the source:
-`pandas.read_csv(path, comment="#")` skips them.
+Each table comes as CSV and Parquet with identical content. The CSV ends with a few comment lines starting with `#` that name the source: `pandas.read_csv(path, comment="#")` skips them.
 
 ## Licence and attribution
 
