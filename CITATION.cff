@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite them as below and link to https://www.fuel-prices.eu/research/"
+title: "European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages"
+type: dataset
+authors:
+  - name: "fuel-prices.eu"
+    website: "https://www.fuel-prices.eu/"
+version: "2026-09.4"
+date-released: "2026-09-26"
+url: "https://www.fuel-prices.eu/research/"
+repository-artifact: "https://www.fuel-prices.eu/research/data/"
+repository-code: "https://github.com/fuel-prices-eu/european-fuel-prices"
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+doi: "10.5281/zenodo.22978599"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22978599"
+    description: "Zenodo record (all copies cite this DOI); reserved, active when the Zenodo record is published"
+  - type: url
+    value: "https://www.fuel-prices.eu/research/"
+    description: "Source: fuel-prices.eu research data page"
+abstract: >-
+  Weekly EU Weekly Oil Bulletin panel (2005-01-03 onwards, European Commission data, CC BY 4.0) with the Commission's EU27 and
+  euro-area weighted averages, and daily national and regional fuel price statistics computed by fuel-prices.eu from official
+  national station feeds (our statistics CC BY 4.0; the underlying source data keep their own terms, see README-d2.md).
+keywords:
+  - fuel prices
+  - gasoline
+  - petrol
+  - diesel
+  - retail prices
+  - Weekly Oil Bulletin
+  - Europe
+  - energy prices
+  - time series
+  - panel data
