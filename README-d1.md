@@ -2,7 +2,7 @@
 
 > Copy of https://www.fuel-prices.eu/research/data/d1-eu-weekly-bulletin/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-09.5 · data built 2026-09-26T15:58Z · https://www.fuel-prices.eu/research/
+Version 2026-09.8 · data built 2026-09-27T07:05Z · https://www.fuel-prices.eu/research/
 
 National average consumer prices of Euro-super 95 petrol and automotive diesel, **all taxes included**, as reported every week
 by each EU member state to the European Commission (DG ENER) in the Weekly Oil Bulletin, compiled into one panel by fuel-prices.eu.
@@ -36,7 +36,7 @@ a single difference stops the build. Weeks the Commission revises after publicat
 | currency | text | national currency of that week (ISO 4217). Euro changeovers: SI 1 Jan 2007 (SIT), CY and MT 1 Jan 2008 (CYP, MTL), SK 1 Jan 2009 (SKK), EE 1 Jan 2011 (EEK), LV 1 Jan 2014 (LVL), LT 1 Jan 2015 (LTL), HR 1 Jan 2023 (HRK), BG 1 Jan 2026 (BGN) |
 | eur_rate | number | units of national currency per 1 EUR. A fixed parity from the day the irrevocable conversion rate was fixed: BGN 1.95583 from 8 Jul 2025, HRK 7.53450 from 12 Jul 2022, SIT 239.640 from 11 Jul 2006, CYP 0.585274 and MTL 0.429300 from 10 Jul 2007, SKK 30.1260 from 8 Jul 2008, EEK 15.6466 from 13 Jul 2010, LVL 0.702804 from 9 Jul 2013, LTL 3.45280 from 23 Jul 2014 (before those days, and in all other cases: the ECB euro reference rate of the bulletin date, or the last fixing before it — the rate the Commission itself uses). 1 for EUR |
 | eur_rate_date | date | date of the ECB fixing used (empty for EUR; `fixed parity` where a parity applies) |
-| euro95_local_l, diesel_local_l | number | national-currency price per litre = EUR price × eur_rate (rounded to 3 decimals) |
+| euro95_local_l, diesel_local_l | number | national-currency price per litre = the Commission's EUR price **before rounding** (EUR per 1000 L ÷ 1000) × eur_rate, rounded half-up to 3 decimals once, at the end (since version 2026-09.6) |
 
 ## Columns — `fp-d1-eu-weighted-average`
 
@@ -50,7 +50,7 @@ a single difference stops the build. Weeks the Commission revises after publicat
 
 - Weeks for which the Commission file has no price for a country are **not in the file** (no row; for example Croatia before 2013, Bulgaria and Romania before 2008, the United Kingdom after 2020). Where one of the two fuels is missing in a week, that cell is **empty, never 0**.
 - The Commission publishes EUR per 1000 L; we divide by 1000 and round half-up to 3 decimals (EUR per litre).
-- National-currency prices are **derived** with `eur_rate` (see above); the bulletin's own national-currency tables can differ in the last decimal.
+- National-currency prices are **derived**: Commission EUR price before rounding × `eur_rate`, rounded to 3 decimals only at the end, and re-checked cell by cell at build time (before version 2026-09.6 they were computed from the EUR price already rounded to 3 decimals, which could move them by up to about 0.2 HUF per litre). The bulletin's own national-currency tables use the Commission's rates and can still differ in the last decimal.
 - The **United Kingdom** (2005-01-03 to 2020-12-21) is taken directly from the Commission file. It left the EU on 31 January 2020; the Commission kept
   publishing UK prices during the transition period, so the last 46 weeks have `in_eu` = false. These UK rows are not used in the EU averages
   shown on fuel-prices.eu.
@@ -63,7 +63,7 @@ This repository holds **samples only** (`sample/*.csv`, a few hundred rows of ea
 
 ## How to cite
 
-> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-09.5) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22978599
+> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-09.8) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22978599
 
 This file describes one table of that record. Please cite the DOI, so that citations are not split between copies.
 
