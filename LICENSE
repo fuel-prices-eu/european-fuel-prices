@@ -10,6 +10,8 @@ Attribution
 - United Kingdom rows of D2 and D3 (UK Fuel Finder, Department for Energy Security and Net Zero):
   "Contains public sector information licensed under the Open Government Licence v3.0"
   (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). Keep this statement when you reuse them.
+- Austria, Denmark, Romania and Slovenia rows of D2 and D3: the sources publish no licence; these rows are aggregates computed
+  by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices are republished.
 - Credit line: Source: fuel-prices.eu (https://www.fuel-prices.eu/research/)
 - Exception: sample/fp-d4-stations-fr_sample.csv contains station-level source data from prix-carburants.gouv.fr,
   republished under the Licence Ouverte 2.0 (Etalab), https://www.etalab.gouv.fr/licence-ouverte-open-licence ,

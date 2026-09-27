@@ -5,6 +5,18 @@ This copy contains D1–D3 only. The entries below are the changelog of the sour
 Versions are named `YYYY-MM` (a suffix such as `.1` marks a revision within the month). Within a month, files are rebuilt on schedule (D1 weekly, D2/D3 daily, D4 monthly); the version changes when
 the method or the coverage changes. Every change of method is listed here.
 
+## 2026-09.9 — Lithuania excluded pending licence review; terms of the sources that publish no licence (27 September 2026, night)
+
+- **Lithuania is excluded from D2 and D3 pending licence review.** Its rows are no longer in the files (Lithuania 360 D2 rows and 20,278 D3 rows, as of 27 September 2026). Why: the energy agency (Lietuvos energetikos agentūra, ena.lt) states "all rights reserved" ("© 2026 VšĮ Lietuvos energetikos agentūra. Visos teisės saugomos", read on 27 September 2026).
+  The live pages of fuel-prices.eu still show Lithuania.
+- **Austria, Denmark, Romania and Slovenia stay** as aggregates computed by fuel-prices.eu: their sources publish no licence, the files hold only
+  our statistics (mean, median, p10, p90, number of stations) and no station-level price is republished. `source_terms` of these rows now says
+  so ("No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level
+  prices republished"; it said "No licence published by the source; fuel-prices.eu publishes only its own aggregate statistics").
+- No figure changed for the markets that stay.
+- The entry for the first release again states the coverage of that release (D2: 20 markets, D3: 9 countries); versions 2026-09.5 to 2026-09.8
+  recomputed it from the current files after each exclusion.
+
 ## 2026-09.8 — five more markets excluded pending licence review; source terms of Greece, Iceland and Romania (27 September 2026, evening)
 
 - **Serbia, North Macedonia, Montenegro, Bosnia and Herzegovina and Moldova are excluded from D2 pending licence review.** Their rows are no
@@ -220,7 +232,7 @@ the method or the coverage changes. Every change of method is listed here.
 ## 2026-09 — first release (26 September 2026)
 
 - D1 EU Weekly Oil Bulletin panel, 2005-01-03 to 2026-09-21, 26 countries with prices (Portugal excluded) and 4 empty UK weeks, plus the Commission's EU27 and euro-area weighted averages.
-- D2 national daily statistics for 12 markets; D3 regional daily statistics for 7 countries; D4 station-level monthly files for France, Italy, Spain and Croatia.
+- D2 national daily statistics for 20 markets; D3 regional daily statistics for 9 countries; D4 station-level monthly files for France, Italy, Spain and Croatia.
 - Excluded from all files: Portugal, Andorra. Germany appears only as bulletin rows in D1.
 - Exchange rates: ECB euro reference rates (daily fixing of the date, or the last fixing before it). The bulletin exchange rates stored in our
   database were **not** used: for older weeks they are stored with only 3 decimals (e.g. HUF 0.002 EUR), which would distort national-currency prices.

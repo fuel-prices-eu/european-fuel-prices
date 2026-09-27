@@ -2,7 +2,7 @@
 
 > Copy of https://www.fuel-prices.eu/research/data/d1-eu-weekly-bulletin/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-09.8 · data built 2026-09-27T07:05Z · https://www.fuel-prices.eu/research/
+Version 2026-09.9 · data built 2026-09-27T07:05Z · https://www.fuel-prices.eu/research/
 
 National average consumer prices of Euro-super 95 petrol and automotive diesel, **all taxes included**, as reported every week
 by each EU member state to the European Commission (DG ENER) in the Weekly Oil Bulletin, compiled into one panel by fuel-prices.eu.
@@ -63,7 +63,7 @@ This repository holds **samples only** (`sample/*.csv`, a few hundred rows of ea
 
 ## How to cite
 
-> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-09.8) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22978599
+> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-09.9) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22978599
 
 This file describes one table of that record. Please cite the DOI, so that citations are not split between copies.
 
