@@ -5,6 +5,12 @@ This copy contains D1–D3 only. The entries below are the changelog of the sour
 Versions are named `YYYY-MM` (a suffix such as `.1` marks a revision within the month). Within a month, files are rebuilt on schedule (D1 weekly, D2/D3 daily, D4 monthly); the version changes when
 the method or the coverage changes. Every change of method is listed here.
 
+## DOI active (28 September 2026; no data changed)
+
+- The Zenodo record of D1–D3 is published: **https://doi.org/10.5281/zenodo.22978598** (all versions; this first version: https://doi.org/10.5281/zenodo.22978599).
+  `CITATION.cff`, the READMEs and /research/ cite it again (it had been withdrawn on 27 September 2026 while the record was a draft).
+  D4 is not part of the record and is still cited through https://www.fuel-prices.eu/research/.
+
 ## 2026-09.9 — Lithuania excluded pending licence review; terms of the sources that publish no licence (27 September 2026, night)
 
 - **Lithuania is excluded from D2 and D3 pending licence review.** Its rows are no longer in the files (Lithuania 360 D2 rows and 20,278 D3 rows, as of 27 September 2026). Why: the energy agency (Lietuvos energetikos agentūra, ena.lt) states "all rights reserved" ("© 2026 VšĮ Lietuvos energetikos agentūra. Visos teisės saugomos", read on 27 September 2026).
