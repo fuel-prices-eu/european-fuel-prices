@@ -2,7 +2,7 @@
 
 Source: fuel-prices.eu — https://www.fuel-prices.eu/research/
 
-DOI: `10.5281/zenodo.22978599` (reserved on Zenodo; it becomes active when the Zenodo record is published)
+DOI: [10.5281/zenodo.22978599](https://doi.org/10.5281/zenodo.22978599) (this version) · all versions: [10.5281/zenodo.22978598](https://doi.org/10.5281/zenodo.22978598)
 
 This repository holds the documentation and small samples; it **supplements** (IsSupplementTo) the Zenodo record `10.5281/zenodo.22978599`, which holds the full files. Please cite the DOI, not this repository.
 

@@ -16,7 +16,10 @@ doi: "10.5281/zenodo.22978599"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.22978599"
-    description: "Zenodo record (all copies cite this DOI); reserved, active when the Zenodo record is published"
+    description: "Zenodo record (all copies cite this DOI)"
+  - type: doi
+    value: "10.5281/zenodo.22978598"
+    description: "Zenodo concept DOI (all versions)"
   - type: url
     value: "https://www.fuel-prices.eu/research/"
     description: "Source: fuel-prices.eu research data page"
