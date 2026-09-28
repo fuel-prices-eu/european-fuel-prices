@@ -2,7 +2,7 @@
 
 > Copy of https://www.fuel-prices.eu/research/data/d3-regional-daily/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-09.9 · data built 2026-09-27T19:32Z · https://www.fuel-prices.eu/research/
+Version 2026-09.9 · data built 2026-09-28T03:40Z · https://www.fuel-prices.eu/research/
 
 The D2 statistics per region, where the source lets us place a station in a region. Same method (unweighted statistics, the same daily
 snapshot times in Bucharest time), same exclusions (markets excluded pending licence review, listed in the D2 README) and the
@@ -11,10 +11,10 @@ figure rests on very few prices). **Our statistics are CC BY 4.0; the source dat
 
 | | |
 |---|---|
-| Period | 2024-07-03 to 2026-09-27 |
+| Period | 2024-07-03 to 2026-09-28 |
 | Countries | 6 |
 | Regions | 351 |
-| Rows | 176,207 |
+| Rows | 176,411 |
 | Frequency | daily |
 
 ## Regions

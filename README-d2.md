@@ -2,17 +2,17 @@
 
 > Copy of https://www.fuel-prices.eu/research/data/d2-national-daily/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-09.9 · data built 2026-09-27T19:32Z · https://www.fuel-prices.eu/research/
+Version 2026-09.9 · data built 2026-09-28T03:40Z · https://www.fuel-prices.eu/research/
 
 Daily statistics per market and fuel, computed by fuel-prices.eu from the official or statutory national fuel-price feeds it collects
 as often as each national feed updates, from every 30 minutes to once a day. **Our statistics are CC BY 4.0. The underlying source data keep their own terms** (column `source_terms`).
 
 | | |
 |---|---|
-| Period | 2024-07-03 to 2026-09-27 (each market starts on its own date, see table below) |
+| Period | 2024-07-03 to 2026-09-28 (each market starts on its own date, see table below) |
 | Markets | 11 |
-| Rows | 4,168 |
-| Stations | 56,598 distinct stations with at least one price on the latest full-coverage day of each of the 10 station feeds (27 September 2026: DK, ES, FR, GB, HR, IS, RO, SI; 24 September 2026: AT; 26 September 2026: IT) |
+| Rows | 4,173 |
+| Stations | 56,598 distinct stations with at least one price on the latest full-coverage day of each of the 10 station feeds (27 September 2026: DK, ES, FR, GB, HR, IS, SI; 24 September 2026: AT; 26 September 2026: IT; 28 September 2026: RO) |
 | Frequency | daily |
 | Licence | fuel-prices.eu statistics: CC BY 4.0. Source data: see `source_terms` |
 
@@ -29,7 +29,7 @@ as often as each national feed updates, from every 30 minutes to once a day. **O
 | HR | Croatia | 2026-08-05 | 2026-09-27 | 54 | 2026-08-05 | stations | Ministry of Economy (MINGO), mzoe-gor.hr | Open data of the Ministry of Economy (MINGO), attribution required |
 | IS | Iceland | 2025-06-02 | 2026-09-27 | 150 | 2025-06-02 | stations | Gasvaktin (gasvaktin.is) | MIT License (gasvaktin project, https://github.com/gasvaktin/gasvaktin; Copyright (c) 2016 gasvaktin) |
 | IT | Italy | 2026-06-24 | 2026-09-26 | 95 | 2026-06-26 | stations | Osservaprezzi Carburanti, MIMIT | Italian Open Data License 2.0 (IODL 2.0) |
-| RO | Romania | 2026-05-21 | 2026-09-27 | 129 | 2026-05-21 | stations | Monitorul Prețurilor Carburanților (Consiliul Concurenței) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+| RO | Romania | 2026-05-21 | 2026-09-28 | 130 | 2026-05-21 | stations | Monitorul Prețurilor Carburanților (Consiliul Concurenței) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
 | SI | Slovenia | 2026-08-05 | 2026-09-27 | 54 | 2026-08-05 | stations | goriva.si (Ministry of Economy) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
 
 **First day, last day and days** are counted on the same set: every day published in the file, including days flagged `low_coverage`, so `days` ≤ last − first + 1 (a smaller number means days without data). **National coverage from** = the first day without the `low_coverage` flag (the rule is under *Method → Partial days*). /press/ (records) uses these D2 flags directly (and the same rule for Portugal and Andorra); /news/ applies the same rule to its own daily series, which for some markets begins later than D2 (France: D2 from 6 June 2026, /news/ from 26 June 2026, because the /news/ series starts on 25 June 2026 and that day is partial).
