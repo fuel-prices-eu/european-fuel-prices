@@ -2,7 +2,7 @@
 
 > Copy of https://www.fuel-prices.eu/research/data/d1-eu-weekly-bulletin/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-10.1 · data built 2026-09-27T07:05Z · https://www.fuel-prices.eu/research/
+Version 2026-10.1 · data built 2026-10-01T18:00Z · https://www.fuel-prices.eu/research/
 
 National average consumer prices of Euro-super 95 petrol and automotive diesel, **all taxes included**, as reported every week
 by each EU member state to the European Commission (DG ENER) in the Weekly Oil Bulletin, compiled into one panel by fuel-prices.eu.
@@ -11,9 +11,9 @@ a single difference stops the build. Weeks the Commission revises after publicat
 
 | | |
 |---|---|
-| Period | 2005-01-03 to 2026-09-21 (bulletin price dates, Mondays) |
+| Period | 2005-01-03 to 2026-09-28 (bulletin price dates, Mondays) |
 | Countries | 27 EU member states (AT, BE, BG, CY, CZ, DE, DK, EE, ES, FI, FR, GR, HR, HU, IE, IT, LT, LU, LV, MT, NL, PL, PT, RO, SE, SI, SK) + United Kingdom (2005 to 2020, `in_eu` = false from 1 February 2020) |
-| Rows | 29,363 |
+| Rows | 29,390 |
 | Frequency | weekly |
 | Licence | CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/ (European Commission, Decision 2011/833/EU) |
 | Attribution | "EU Weekly Oil Bulletin, European Commission; compiled by fuel-prices.eu" |
@@ -21,7 +21,7 @@ a single difference stops the build. Weeks the Commission revises after publicat
 ## Files
 
 - `fp-d1-eu-weekly-panel.zip` / `.csv.gz` / `.parquet` (on the site; samples in `sample/`) — one row per country and week.
-- `fp-d1-eu-weighted-average.zip` / `.csv.gz` / `.parquet` (on the site; samples in `sample/`) — the Commission's own consumption-weighted averages for the EU27 and the euro area (2005-01-03 to 2026-09-21, 2,170 rows).
+- `fp-d1-eu-weighted-average.zip` / `.csv.gz` / `.parquet` (on the site; samples in `sample/`) — the Commission's own consumption-weighted averages for the EU27 and the euro area (2005-01-03 to 2026-09-28, 2,172 rows).
 
 ## Columns — `fp-d1-eu-weekly-panel`
 
