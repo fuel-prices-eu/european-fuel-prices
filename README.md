@@ -6,7 +6,7 @@ DOI: [10.5281/zenodo.22978599](https://doi.org/10.5281/zenodo.22978599) (this ve
 
 This repository holds the documentation and small samples; it **supplements** (IsSupplementTo) the Zenodo record `10.5281/zenodo.22978599`, which holds the full files. Please cite the DOI, not this repository.
 
-Free fuel price data for research from [fuel-prices.eu](https://www.fuel-prices.eu/research/): the European Commission's Weekly Oil Bulletin as one weekly panel since 2005 (D1), and daily national (D2) and regional (D3) statistics of pump prices computed from official national station feeds. Version **2026-09.9**, documentation built 2026-09-28T18:51Z (the build time of each table is in its README). The same files are published on https://www.fuel-prices.eu/research/ (with station-level data, D4, which is not included here).
+Free fuel price data for research from [fuel-prices.eu](https://www.fuel-prices.eu/research/): the European Commission's Weekly Oil Bulletin as one weekly panel since 2005 (D1), and daily national (D2) and regional (D3) statistics of pump prices computed from official national station feeds. Version **2026-10.1**, documentation built 2026-10-01T12:20Z (the build time of each table is in its README). The same files are published on https://www.fuel-prices.eu/research/ (with station-level data, D4, which is not included here).
 
 ## Data sets
 
@@ -14,8 +14,8 @@ Free fuel price data for research from [fuel-prices.eu](https://www.fuel-prices.
 |---|---|---|---|---|
 | D1 | EU Weekly Oil Bulletin panel: weekly national average prices of Euro-super 95 and diesel, all taxes included, 27 EU member states + United Kingdom (2005–2020) | 2005-01-03 to 2026-09-21 | 29,363 | CC BY 4.0 (European Commission data) |
 | D1 | EU27 and euro-area weighted averages (European Commission) | 2005-01-03 to 2026-09-21 | 2,170 | CC BY 4.0 (European Commission data) |
-| D2 | Daily national statistics (mean, median, p10, p90) from official national fuel-price feeds, 11 markets | 2024-07-03 to 2026-09-28 | 4,173 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
-| D3 | The same daily statistics per region, 351 regions in 6 countries | 2024-07-03 to 2026-09-28 | 176,411 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
+| D2 | Daily national statistics (mean, median, p10, p90) from official national fuel-price feeds, 11 markets | 2024-07-03 to 2026-10-01 | 4,340 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
+| D3 | The same daily statistics per region, 351 regions in 6 countries | 2024-07-03 to 2026-10-01 | 182,615 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
 
 ## Files
 
@@ -42,16 +42,32 @@ Each table comes as CSV and Parquet with identical content. The CSV ends with a 
 - **D1** (panel and weighted averages): *EU Weekly Oil Bulletin, European Commission; compiled by fuel-prices.eu.* Commission data, reused under CC BY 4.0 (Commission Decision 2011/833/EU, legal notice https://commission.europa.eu/legal-notice_en). The changes made by fuel-prices.eu are listed in the D1 README.
 - **D2 and D3**: statistics computed by fuel-prices.eu, licensed CC BY 4.0. The underlying national source data keep their own terms, stated on every row in the column `source_terms` and in the D2 README.
 - **United Kingdom rows of D2 and D3** (UK Fuel Finder, Department for Energy Security and Net Zero): *Contains public sector information licensed under the Open Government Licence v3.0* (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). Keep this statement when you reuse them.
-- Australia, Türkiye, Sweden, Serbia, North Macedonia, Montenegro, Bosnia and Herzegovina, Moldova and Lithuania are **excluded pending licence review** (reasons in README-d2.md); they are not in these files.
-- **Greece rows**: CC BY 4.0 (Fuel Price Observatory, Ministry of Economy and Development, as licensed on data.gov.gr). **Iceland rows**: MIT License, Copyright (c) 2016 gasvaktin.
-- **Austria, Denmark, Romania and Slovenia rows**: the sources publish no licence; these rows are aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices are republished.
+- **Markets in D2** (11): Austria, Denmark, Spain, France, United Kingdom, Greece, Croatia, Iceland, Italy, Romania and Slovenia. D3 holds the regions of those markets whose feed places a station in a region (README-d3.md). Terms of the source data, as stated on every row (`source_terms`) and on https://www.fuel-prices.eu/sources/ :
+
+  | market | terms of the source data |
+  |---|---|
+  | Austria | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+  | Denmark | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+  | Spain | Reuse conditions of Royal Decree 1495/2011 (credit the source and give the date of the last update) |
+  | France | Licence Ouverte 2.0 (Etalab) |
+  | United Kingdom | Open Government Licence v3.0 (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/); attribution: Contains public sector information licensed under the Open Government Licence v3.0 |
+  | Greece | CC BY 4.0 (Ministry of Economy and Development, Fuel Price Observatory fuelprices.gr, as licensed on data.gov.gr: https://data.gov.gr/dataset/parathrhthrio-timwn-ygrwn-kaysimwn) |
+  | Croatia | Open data of the Ministry of Economy (MINGO), attribution required |
+  | Iceland | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+  | Italy | Italian Open Data License 2.0 (IODL 2.0) |
+  | Romania | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+  | Slovenia | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+
+  Where the source publishes no licence, the rows are aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices are republished.
+- **Withdrawn from fuel-prices.eu on 1 October 2026** (their sources do not allow republication): Portugal, Andorra, Türkiye, Lithuania, Moldova, Serbia, North Macedonia, Montenegro and Bosnia and Herzegovina. None of them is in D2/D3. Portugal and Andorra were never in D2/D3; the D2/D3 rows of the others, published in versions 2026-09.4 to 2026-09.8, were also removed from the earlier commits of the Hugging Face and GitHub copies. (Portugal and Lithuania remain in D1: European Commission data.)
+- Australia and Sweden are **excluded pending licence review** (reasons in README-d2.md); they are not in these files.
 - Station-level prices (D4 on the site) are **not** part of this copy; they are on https://www.fuel-prices.eu/research/ under the licence of each national source.
 
 Credit line: **Source: fuel-prices.eu (https://www.fuel-prices.eu/research/)**
 
 ## How to cite
 
-> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-09.9) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22978599
+> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-10.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22978599
 
 A `CITATION.cff` file is included. Per-set details (columns, method, markets, sources): `README-d1.md`, `README-d2.md`, `README-d3.md`; changes and corrections: `CHANGELOG.md`.
 

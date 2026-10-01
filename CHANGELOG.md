@@ -5,6 +5,17 @@ This copy contains D1–D3 only. The entries below are the changelog of the sour
 Versions are named `YYYY-MM` (a suffix such as `.1` marks a revision within the month). Within a month, files are rebuilt on schedule (D1 weekly, D2/D3 daily, D4 monthly); the version changes when
 the method or the coverage changes. Every change of method is listed here.
 
+## 2026-10.1 — source terms of Iceland; withdrawn markets; copies cleaned (1 October 2026)
+
+- **Iceland (D2): `source_terms` now says that the source publishes no licence**, like Austria, Denmark, Romania and Slovenia. Until this
+  version it named the MIT License of the gasvaktin project; that licence covers gasvaktin's code, not the prices, which gasvaktin collects
+  from the fuel companies' websites. Only our aggregates are published (no station-level prices). No values changed.
+- **Withdrawn on 1 October 2026:** Türkiye, Lithuania, Moldova, Serbia, North Macedonia, Montenegro and Bosnia and Herzegovina — until now
+  described here as "excluded pending licence review" — are withdrawn from fuel-prices.eu, as are Portugal and Andorra: their sources do not
+  allow republication. Australia and Sweden stay excluded pending licence review.
+- **Copies:** the D2/D3 rows of these markets, which were in versions 2026-09.4 to 2026-09.8, have been removed from every earlier commit of the
+  Hugging Face and GitHub copies (history rewritten; the commit identifiers of those copies changed). The Zenodo record never contained them.
+
 ## DOI active (28 September 2026; no data changed)
 
 - The Zenodo record of D1–D3 is published: **https://doi.org/10.5281/zenodo.22978598** (all versions; this first version: https://doi.org/10.5281/zenodo.22978599).
@@ -164,10 +175,10 @@ the method or the coverage changes. Every change of method is listed here.
   | FR | LPG | 1,643 | 1,505 | 1.0514 | 1.0498 | 1.0390 | 1.0390 | 0.9690 | 0.9690 | 1.1528 | 1.1512 |
   | FR | Petrol 95 (SP95, E5) | 3,583 | 2,783 | 2.1754 | 2.2221 | 2.2190 | 2.2330 | 1.9900 | 2.1300 | 2.2990 | 2.2990 |
   | FR | Petrol 98 (SP98) | 8,421 | 7,170 | 2.2313 | 2.2687 | 2.2690 | 2.2800 | 1.9900 | 1.9900 | 2.3790 | 2.3900 |
-  | IT | Diesel | 22,104 | 21,137 | 2.3267 | 2.3582 | 2.3440 | 2.3590 | 2.2880 | 2.2990 | 2.3970 | 2.4100 |
-  | IT | LPG | 4,740 | 4,567 | 0.7565 | 0.7564 | 0.7490 | 0.7490 | 0.6890 | 0.6918 | 0.8490 | 0.8490 |
-  | IT | Petrol 95 | 22,032 | 21,066 | 2.1437 | 2.1603 | 2.1570 | 2.1590 | 2.1090 | 2.1190 | 2.1990 | 2.1990 |
-  | IT | Petrol 98 | 1,374 | 1,303 | 2.2479 | 2.2649 | 2.2890 | 2.2990 | 1.9990 | 2.0792 | 2.3890 | 2.3890 |
+  | IT | Diesel | 22,104 | 21,248 | 2.3267 | 2.3580 | 2.3440 | 2.3590 | 2.2880 | 2.2990 | 2.3970 | 2.4100 |
+  | IT | LPG | 4,740 | 4,588 | 0.7565 | 0.7563 | 0.7490 | 0.7490 | 0.6890 | 0.6921 | 0.8490 | 0.8490 |
+  | IT | Petrol 95 | 22,032 | 21,177 | 2.1437 | 2.1602 | 2.1570 | 2.1590 | 2.1090 | 2.1190 | 2.1990 | 2.1990 |
+  | IT | Petrol 98 | 1,374 | 1,305 | 2.2479 | 2.2649 | 2.2890 | 2.2990 | 1.9990 | 2.0794 | 2.3890 | 2.3890 |
 
 - **D1:** the fixed conversion rate is applied from the day it was fixed: HRK 7.53450 from 12 July 2022 (3 January – 11 July 2022
   now use the ECB HRK reference rate of the bulletin date), BGN 1.95583 from 8 July 2025 (before: the ECB BGN rate, 1.9558).
