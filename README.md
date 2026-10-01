@@ -42,21 +42,21 @@ Each table comes as CSV and Parquet with identical content. The CSV ends with a 
 - **D1** (panel and weighted averages): *EU Weekly Oil Bulletin, European Commission; compiled by fuel-prices.eu.* Commission data, reused under CC BY 4.0 (Commission Decision 2011/833/EU, legal notice https://commission.europa.eu/legal-notice_en). The changes made by fuel-prices.eu are listed in the D1 README.
 - **D2 and D3**: statistics computed by fuel-prices.eu, licensed CC BY 4.0. The underlying national source data keep their own terms, stated on every row in the column `source_terms` and in the D2 README.
 - **United Kingdom rows of D2 and D3** (UK Fuel Finder, Department for Energy Security and Net Zero): *Contains public sector information licensed under the Open Government Licence v3.0* (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). Keep this statement when you reuse them.
-- **Markets in D2** (11): Austria, Denmark, Spain, France, United Kingdom, Greece, Croatia, Iceland, Italy, Romania and Slovenia. D3 holds the regions of those markets whose feed places a station in a region (README-d3.md). Terms of the source data, as stated on every row (`source_terms`) and on https://www.fuel-prices.eu/sources/ :
+- **Markets in D2** (11): Austria, Croatia, Denmark, France, Greece, Iceland, Italy, Romania, Slovenia, Spain and United Kingdom. D3 holds the regions of those markets whose feed places a station in a region (README-d3.md). Terms of the source data, as stated on every row (`source_terms`) and on https://www.fuel-prices.eu/sources/ :
 
   | market | terms of the source data |
   |---|---|
   | Austria | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
-  | Denmark | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
-  | Spain | Reuse conditions of Royal Decree 1495/2011 (credit the source and give the date of the last update) |
-  | France | Licence Ouverte 2.0 (Etalab) |
-  | United Kingdom | Open Government Licence v3.0 (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/); attribution: Contains public sector information licensed under the Open Government Licence v3.0 |
-  | Greece | CC BY 4.0 (Ministry of Economy and Development, Fuel Price Observatory fuelprices.gr, as licensed on data.gov.gr: https://data.gov.gr/dataset/parathrhthrio-timwn-ygrwn-kaysimwn) |
   | Croatia | Open data of the Ministry of Economy (MINGO), attribution required |
+  | Denmark | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+  | France | Licence Ouverte 2.0 (Etalab) |
+  | Greece | CC BY 4.0 (Ministry of Economy and Development, Fuel Price Observatory fuelprices.gr, as licensed on data.gov.gr: https://data.gov.gr/dataset/parathrhthrio-timwn-ygrwn-kaysimwn) |
   | Iceland | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
   | Italy | Italian Open Data License 2.0 (IODL 2.0) |
   | Romania | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
   | Slovenia | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+  | Spain | Reuse conditions of Royal Decree 1495/2011 (credit the source and give the date of the last update) |
+  | United Kingdom | Open Government Licence v3.0 (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/); attribution: Contains public sector information licensed under the Open Government Licence v3.0 |
 
   Where the source publishes no licence, the rows are aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices are republished.
 - **Withdrawn from fuel-prices.eu on 1 October 2026** (their sources do not allow republication): Portugal, Andorra, Türkiye, Lithuania, Moldova, Serbia, North Macedonia, Montenegro and Bosnia and Herzegovina. None of them is in D2/D3. Portugal and Andorra were never in D2/D3; the D2/D3 rows of the others, published in versions 2026-09.4 to 2026-09.8, were also removed from the earlier commits of the Hugging Face and GitHub copies. (Portugal and Lithuania remain in D1: European Commission data.)
