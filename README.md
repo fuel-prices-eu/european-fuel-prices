@@ -2,11 +2,11 @@
 
 Source: fuel-prices.eu — https://www.fuel-prices.eu/research/
 
-DOI: [10.5281/zenodo.22978599](https://doi.org/10.5281/zenodo.22978599) (this version) · all versions: [10.5281/zenodo.22978598](https://doi.org/10.5281/zenodo.22978598)
+DOI: [10.5281/zenodo.23094144](https://doi.org/10.5281/zenodo.23094144) (this version) · all versions: [10.5281/zenodo.22978598](https://doi.org/10.5281/zenodo.22978598)
 
-This repository holds the documentation and small samples; it **supplements** (IsSupplementTo) the Zenodo record `10.5281/zenodo.22978599`, which holds the full files. Please cite the DOI, not this repository.
+This repository holds the documentation and small samples; it **supplements** (IsSupplementTo) the Zenodo record `10.5281/zenodo.23094144`, which holds the full files. Please cite the DOI, not this repository.
 
-Free fuel price data for research from [fuel-prices.eu](https://www.fuel-prices.eu/research/): the European Commission's Weekly Oil Bulletin as one weekly panel since 2005 (D1), and daily national (D2) and regional (D3) statistics of pump prices computed from official national station feeds. Version **2026-10.1**, documentation built 2026-10-01T18:00Z (the build time of each table is in its README). The same files are published on https://www.fuel-prices.eu/research/ (with station-level data, D4, which is not included here).
+Free fuel price data for research from [fuel-prices.eu](https://www.fuel-prices.eu/research/): the European Commission's Weekly Oil Bulletin as one weekly panel since 2005 (D1), and daily national (D2) and regional (D3) statistics of pump prices computed from official national station feeds. Version **2026-10.1**, documentation built 2026-10-02T11:00Z (the build time of each table is in its README). The same files are published on https://www.fuel-prices.eu/research/ (with station-level data, D4, which is not included here).
 
 ## Data sets
 
@@ -14,8 +14,8 @@ Free fuel price data for research from [fuel-prices.eu](https://www.fuel-prices.
 |---|---|---|---|---|
 | D1 | EU Weekly Oil Bulletin panel: weekly national average prices of Euro-super 95 and diesel, all taxes included, 27 EU member states + United Kingdom (2005–2020) | 2005-01-03 to 2026-09-28 | 29,390 | CC BY 4.0 (European Commission data) |
 | D1 | EU27 and euro-area weighted averages (European Commission) | 2005-01-03 to 2026-09-28 | 2,172 | CC BY 4.0 (European Commission data) |
-| D2 | Daily national statistics (mean, median, p10, p90) from official national fuel-price feeds, 11 markets | 2024-07-03 to 2026-10-01 | 4,340 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
-| D3 | The same daily statistics per region, 351 regions in 6 countries | 2024-07-03 to 2026-10-01 | 182,615 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
+| D2 | Daily national statistics (mean, median, p10, p90) from official national fuel-price feeds, 11 markets | 2024-07-03 to 2026-10-02 | 4,345 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
+| D3 | The same daily statistics per region, 351 regions in 6 countries | 2024-07-03 to 2026-10-02 | 182,819 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
 
 ## Files
 
@@ -67,7 +67,7 @@ Credit line: **Source: fuel-prices.eu (https://www.fuel-prices.eu/research/)**
 
 ## How to cite
 
-> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-10.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22978599
+> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-10.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23094144
 
 A `CITATION.cff` file is included. Per-set details (columns, method, markets, sources): `README-d1.md`, `README-d2.md`, `README-d3.md`; changes and corrections: `CHANGELOG.md`.
 
