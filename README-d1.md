@@ -2,7 +2,7 @@
 
 > Copy of https://www.fuel-prices.eu/research/data/d1-eu-weekly-bulletin/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-10.1 · data built 2026-10-08T18:00Z · https://www.fuel-prices.eu/research/
+Version 2026-10.1 · data built 2026-10-09T11:00Z · https://www.fuel-prices.eu/research/
 
 National average consumer prices of Euro-super 95 petrol and automotive diesel, **all taxes included**, as reported every week
 by each EU member state to the European Commission (DG ENER) in the Weekly Oil Bulletin, compiled into one panel by fuel-prices.eu.
