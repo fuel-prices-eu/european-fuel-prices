@@ -1,5 +1,4 @@
 scope,week,euro95_eur_l,diesel_eur_l
-EURO_AREA,2025-10-27,1.66247,1.55047
 EURO_AREA,2025-11-03,1.6695,1.57352
 EURO_AREA,2025-11-10,1.67416,1.59844
 EURO_AREA,2025-11-17,1.6879,1.61291
@@ -50,8 +49,8 @@ EURO_AREA,2026-09-21,2.15358,2.26099
 EURO_AREA,2026-09-28,2.16321,2.27082
 EURO_AREA,2026-10-05,2.08417,2.20245
 EURO_AREA,2026-10-12,2.07464,2.18567
-EURO_AREA,2026-10-19,2.05933,2.1899
-EU27,2025-10-27,1.61467,1.52765
+EURO_AREA,2026-10-19,2.05543,2.18877
+EURO_AREA,2026-10-26,2.03202,2.20123
 EU27,2025-11-03,1.61943,1.54831
 EU27,2025-11-10,1.62459,1.57139
 EU27,2025-11-17,1.63919,1.58715
@@ -103,7 +102,8 @@ EU27,2026-09-28,2.10379,2.23656
 EU27,2026-10-05,2.00633,2.14853
 EU27,2026-10-12,2.00967,2.13572
 EU27,2026-10-19,1.99133,2.13868
-# SAMPLE of 104 of 2178 rows; full file: https://www.fuel-prices.eu/research/data/d1-eu-weekly-bulletin/fp-d1-eu-weighted-average.zip
+EU27,2026-10-26,1.95404,2.14619
+# SAMPLE of 104 of 2180 rows; full file: https://www.fuel-prices.eu/research/data/d1-eu-weekly-bulletin/fp-d1-eu-weighted-average.zip
 # Source: fuel-prices.eu (https://www.fuel-prices.eu/research/)
 # Consumption-weighted averages published by the European Commission in the Weekly Oil Bulletin (CC BY 4.0); EUR per litre, all taxes.
-# Version 2026-10.1, built 2026-10-23T11:00Z.
+# Version 2026-10.1, built 2026-10-29T19:00Z.

@@ -2,17 +2,17 @@
 
 > Copy of https://www.fuel-prices.eu/research/data/d2-national-daily/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-10.1 · data built 2026-10-23T03:40Z · https://www.fuel-prices.eu/research/
+Version 2026-10.1 · data built 2026-10-29T04:40Z · https://www.fuel-prices.eu/research/
 
 Daily statistics per market and fuel, computed by fuel-prices.eu from the official or statutory national fuel-price feeds it collects
 as often as each national feed updates, from every 30 minutes to once a day. **Our statistics are CC BY 4.0. The underlying source data keep their own terms** (column `source_terms`).
 
 | | |
 |---|---|
-| Period | 2024-07-03 to 2026-10-23 (each market starts on its own date, see table below) |
+| Period | 2024-07-03 to 2026-10-29 (each market starts on its own date, see table below) |
 | Markets | 11 |
-| Rows | 5,228 |
-| Stations | 56,529 distinct stations with at least one price on the latest full-coverage day of each of the 10 station feeds (22 October 2026: AT, DK, ES, FR, GB, HR, IS, SI; 21 October 2026: IT; 23 October 2026: RO) |
+| Rows | 5,474 |
+| Stations | 56,446 distinct stations with at least one price on the latest full-coverage day of each of the 10 station feeds (28 October 2026: AT, DK, ES, FR, GB, HR, IS, SI; 27 October 2026: IT; 29 October 2026: RO) |
 | Frequency | daily |
 | Licence | fuel-prices.eu statistics: CC BY 4.0. Source data: see `source_terms` |
 
@@ -20,17 +20,17 @@ as often as each national feed updates, from every 30 minutes to once a day. **O
 
 | code | market | first day in the file | last day | days in the file | national coverage from | basis | source | source terms |
 |---|---|---|---|---|---|---|---|---|
-| AT | Austria | 2026-07-21 | 2026-10-22 | 94 | 2026-07-27 | stations | E-Control Spritpreisrechner | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
-| DK | Denmark | 2026-07-10 | 2026-10-22 | 104 | 2026-07-10 | stations | Per-station price APIs of the fuel brands (BEK 1351/2025 §16a) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
-| ES | Spain | 2026-06-26 | 2026-10-22 | 118 | 2026-06-26 | stations | Geoportal de Hidrocarburos, MITECO | Reuse conditions of Royal Decree 1495/2011 (credit the source and give the date of the last update) |
-| FR | France | 2026-06-06 | 2026-10-22 | 131 | 2026-06-06 | stations | prix-carburants.gouv.fr | Licence Ouverte 2.0 (Etalab) |
-| GB | United Kingdom | 2026-06-26 | 2026-10-22 | 119 | 2026-06-26 | stations | UK Fuel Finder open data scheme (Department for Energy Security and Net Zero) | Open Government Licence v3.0 (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/); attribution: Contains public sector information licensed under the Open Government Licence v3.0 |
-| GR | Greece | 2024-07-03 | 2026-10-21 | 190 | 2024-07-03 | prefecture averages published by the source | Fuel Price Observatory, Ministry of Development (prefecture averages) | CC BY 4.0 (Ministry of Economy and Development, Fuel Price Observatory fuelprices.gr, as licensed on data.gov.gr: https://data.gov.gr/dataset/parathrhthrio-timwn-ygrwn-kaysimwn) |
-| HR | Croatia | 2026-08-05 | 2026-10-22 | 79 | 2026-08-05 | stations | Ministry of Economy (MINGO), mzoe-gor.hr | Open data of the Ministry of Economy (MINGO), attribution required |
-| IS | Iceland | 2025-06-02 | 2026-10-22 | 175 | 2025-06-02 | stations | Gasvaktin (gasvaktin.is) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
-| IT | Italy | 2026-06-24 | 2026-10-21 | 120 | 2026-06-26 | stations | Osservaprezzi Carburanti, MIMIT | Italian Open Data License 2.0 (IODL 2.0) |
-| RO | Romania | 2026-05-21 | 2026-10-23 | 155 | 2026-05-21 | stations | Monitorul Prețurilor Carburanților (Consiliul Concurenței) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
-| SI | Slovenia | 2026-08-05 | 2026-10-22 | 79 | 2026-08-05 | stations | goriva.si (Ministry of Economy) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+| AT | Austria | 2026-07-21 | 2026-10-28 | 100 | 2026-07-27 | stations | E-Control Spritpreisrechner | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+| DK | Denmark | 2026-07-10 | 2026-10-28 | 110 | 2026-07-10 | stations | Per-station price APIs of the fuel brands (BEK 1351/2025 §16a) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+| ES | Spain | 2026-06-26 | 2026-10-28 | 124 | 2026-06-26 | stations | Geoportal de Hidrocarburos, MITECO | Reuse conditions of Royal Decree 1495/2011 (credit the source and give the date of the last update) |
+| FR | France | 2026-06-06 | 2026-10-28 | 137 | 2026-06-06 | stations | prix-carburants.gouv.fr | Licence Ouverte 2.0 (Etalab) |
+| GB | United Kingdom | 2026-06-26 | 2026-10-28 | 125 | 2026-06-26 | stations | UK Fuel Finder open data scheme (Department for Energy Security and Net Zero) | Open Government Licence v3.0 (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/); attribution: Contains public sector information licensed under the Open Government Licence v3.0 |
+| GR | Greece | 2024-07-03 | 2026-10-26 | 193 | 2024-07-03 | prefecture averages published by the source | Fuel Price Observatory, Ministry of Development (prefecture averages) | CC BY 4.0 (Ministry of Economy and Development, Fuel Price Observatory fuelprices.gr, as licensed on data.gov.gr: https://data.gov.gr/dataset/parathrhthrio-timwn-ygrwn-kaysimwn) |
+| HR | Croatia | 2026-08-05 | 2026-10-28 | 85 | 2026-08-05 | stations | Ministry of Economy (MINGO), mzoe-gor.hr | Open data of the Ministry of Economy (MINGO), attribution required |
+| IS | Iceland | 2025-06-02 | 2026-10-28 | 181 | 2025-06-02 | stations | Gasvaktin (gasvaktin.is) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+| IT | Italy | 2026-06-24 | 2026-10-27 | 126 | 2026-06-26 | stations | Osservaprezzi Carburanti, MIMIT | Italian Open Data License 2.0 (IODL 2.0) |
+| RO | Romania | 2026-05-21 | 2026-10-29 | 161 | 2026-05-21 | stations | Monitorul Prețurilor Carburanților (Consiliul Concurenței) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
+| SI | Slovenia | 2026-08-05 | 2026-10-28 | 85 | 2026-08-05 | stations | goriva.si (Ministry of Economy) | No licence published by the source; aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no station-level prices republished |
 
 **First day, last day and days** are counted on the same set: every day published in the file, including days flagged `low_coverage`, so `days` ≤ last − first + 1 (a smaller number means days without data). **National coverage from** = the first day without the `low_coverage` flag (the rule is under *Method → Partial days*). /press/ (records) uses these D2 flags directly (and the same rule for Portugal and Andorra); /news/ applies the same rule to its own daily series, which for some markets begins later than D2 (France: D2 from 6 June 2026, /news/ from 26 June 2026, because the /news/ series starts on 25 June 2026 and that day is partial).
 **Excluded:** Portugal and Andorra (the Portuguese source forbids commercial use; the Andorran source reserves all rights). Germany is not part of the live-feed datasets.
