@@ -44,9 +44,9 @@ date,country_code,station_id,brand,city,region,lat,lon,fuel,fuel_label,price,cur
 2026-09-30,FR,1000016,,Bourg en Bresse,01,46.207887,5.237121,diesel,Diesel,2.25,EUR,L,2026-09-29T18:13:22,2026-09-30T06:24:19Z
 2026-09-30,FR,1000016,,Bourg en Bresse,01,46.207887,5.237121,e10,Petrol 95 (SP95-E10),1.99,EUR,L,2026-09-29T18:13:22,2026-09-30T06:24:19Z
 2026-09-30,FR,1000016,,Bourg en Bresse,01,46.207887,5.237121,sp98,Petrol 98 (SP98),1.99,EUR,L,2026-09-29T18:13:22,2026-09-30T06:24:19Z
-2026-09-30,FR,10100001,,Romilly-sur-Seine,10,48.51018,3.71443,diesel,Diesel,2.408,EUR,L,2026-09-21T08:00:06,2026-09-30T06:24:25Z
-2026-09-30,FR,10100001,,Romilly-sur-Seine,10,48.51018,3.71443,sp95,"Petrol 95 (SP95, E5)",2.247,EUR,L,2026-09-21T08:00:06,2026-09-30T06:24:25Z
-2026-09-30,FR,10100001,,Romilly-sur-Seine,10,48.51018,3.71443,sp98,Petrol 98 (SP98),2.305,EUR,L,2026-09-21T08:00:06,2026-09-30T06:24:25Z
+2026-09-30,FR,10100001,,Romilly-sur-Seine,10,48.51,3.714,diesel,Diesel,2.408,EUR,L,2026-09-21T08:00:06,2026-09-30T06:24:25Z
+2026-09-30,FR,10100001,,Romilly-sur-Seine,10,48.51,3.714,sp95,"Petrol 95 (SP95, E5)",2.247,EUR,L,2026-09-21T08:00:06,2026-09-30T06:24:25Z
+2026-09-30,FR,10100001,,Romilly-sur-Seine,10,48.51,3.714,sp98,Petrol 98 (SP98),2.305,EUR,L,2026-09-21T08:00:06,2026-09-30T06:24:25Z
 2026-09-30,FR,10100002,,Romilly-sur-Seine,10,48.509,3.732,diesel,Diesel,2.25,EUR,L,2026-08-17T20:31:57,2026-09-30T06:24:31Z
 2026-09-30,FR,10100003,,Romilly-sur-Seine,10,48.512,3.72,diesel,Diesel,2.408,EUR,L,2026-09-29T14:46:00,2026-09-30T06:24:23Z
 2026-09-30,FR,10100003,,Romilly-sur-Seine,10,48.512,3.72,e10,Petrol 95 (SP95-E10),2.168,EUR,L,2026-09-29T14:46:00,2026-09-30T06:24:23Z
@@ -299,9 +299,9 @@ date,country_code,station_id,brand,city,region,lat,lon,fuel,fuel_label,price,cur
 2026-09-30,FR,1100002,,OYONNAX,01,46.25,5.644,diesel,Diesel,2.375,EUR,L,2026-09-29T10:10:46,2026-09-30T06:24:19Z
 2026-09-30,FR,1100002,,OYONNAX,01,46.25,5.644,e10,Petrol 95 (SP95-E10),2.199,EUR,L,2026-09-29T10:11:16,2026-09-30T06:24:19Z
 2026-09-30,FR,1100002,,OYONNAX,01,46.25,5.644,sp98,Petrol 98 (SP98),2.295,EUR,L,2026-09-29T10:11:16,2026-09-30T06:24:19Z
-# SAMPLE of 300 of 1003640 rows; full file: https://www.fuel-prices.eu/research/data/d4-stations/fr/fp-d4-stations-fr-2026-09.zip
+# SAMPLE of 300 of 1003556 rows; full file: https://www.fuel-prices.eu/research/data/d4-stations/fr/fp-d4-stations-fr-2026-09.zip
 # Source: fuel-prices.eu (https://www.fuel-prices.eu/research/)
 # Station-level prices from prix-carburants.gouv.fr. Licence of the source data: Licence Ouverte 2.0 (Etalab) (https://www.etalab.gouv.fr/licence-ouverte-open-licence).
 # Date of the last update of the source data in this file: 2026-09-30T06:24:35Z (UTC).
-# 152 implausible prices removed (source placeholders such as 8.888 or 0.01): below the price floor used on fuel-prices.eu (0.30 EUR/L; Italy 1.30 EUR/L; LPG/CNG/LNG 0.15) or outside 0.5x-2x the median of that day and fuel in this market (the D2 rule).
+# 236 implausible prices removed (source placeholders such as 8.888 or 0.01): below the price floor used on fuel-prices.eu (0.30 EUR/L; Italy 1.30 EUR/L; LPG/CNG/LNG 0.15) or outside 0.5x-2x the median of that day and fuel in this market (the D2 rule).
 # Prices in EUR per litre (CNG/LNG per kg), as published at the station. Version 2026-10.1.
