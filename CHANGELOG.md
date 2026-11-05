@@ -5,6 +5,17 @@ This copy contains D1–D3 only. The entries below are the changelog of the sour
 Versions are named `YYYY-MM` (a suffix such as `.1` marks a revision within the month). Within a month, files are rebuilt on schedule (D1 weekly, D2/D3 daily, D4 monthly); the version changes when
 the method or the coverage changes. Every change of method is listed here.
 
+## 2026-10.2 — Italian history corrected from the official MIMIT source (30 October 2026)
+
+- **Italy (D2, D3, D4): the daily station history was rebuilt from the official MIMIT archive** (quarterly files 2026 Q2–Q3, IODL 2.0).
+  Until this version our import kept, for each station and fuel code, the LAST row of the MIMIT file, so the standard diesel or petrol
+  series of some stations picked up other products (Blue Diesel, HVO, attended-service prices); and the row dated D held the file of D−1/D−2
+  before 23 September 2026. Each day now carries the official file of that day, base product self-service first. 1,752,421 station-day
+  values changed; the daily national diesel average moves by up to about 3 cents (2 August 2026: €2.108 → €2.099).
+- **D4 September 2026 (Italy) republished.** Three rows of 26 September 2026 (station 51910 LPG, station 55763 diesel and petrol) carry
+  `collected_at` and `source_updated_at` empty: their values match the official MIMIT file of that day, but our own read time and the
+  timestamp we had stored for them were stale.
+
 ## 2026-10.1 — source terms of Iceland; withdrawn markets; copies cleaned (1 October 2026)
 
 - **Iceland (D2): `source_terms` now says that the source publishes no licence**, like Austria, Denmark, Romania and Slovenia. Until this
