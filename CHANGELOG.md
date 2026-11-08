@@ -5,6 +5,19 @@ This copy contains D1–D3 only. The entries below are the changelog of the sour
 Versions are named `YYYY-MM` (a suffix such as `.1` marks a revision within the month). Within a month, files are rebuilt on schedule (D1 weekly, D2/D3 daily, D4 monthly); the version changes when
 the method or the coverage changes. Every change of method is listed here.
 
+## 2026-11.2 — UK and Romania regional aggregates removed from D3 (8 November 2026)
+
+- **D3: UK and Romania regional aggregates removed (source licence review, 8 Nov 2026).** The regional rows of the United Kingdom
+  (nations) and Romania (counties) are no longer in D3. Their national daily statistics remain in D2, unchanged. D1, D2 and D4 are
+  not affected; no other market changed.
+
+## 2026-11.1 — Austria withdrawn (7 November 2026)
+
+- **Austria (D2) withdrawn.** E-Control, which runs the Spritpreisrechner, states that its data may not be used by third parties
+  (apps, websites, analyses: "Leider nein", FAQ on www.e-control.at/spritpreisrechner, read on 7 November 2026) and that the price
+  reports are published only on its own website. The Austrian rows (21 July – 6 November 2026) are no longer in D2, and the live
+  Austrian data are no longer shown on fuel-prices.eu. Austria remains in D1 (EU Weekly Oil Bulletin, CC BY 4.0). No other market changed.
+
 ## 2026-10.2 — Italian history corrected from the official MIMIT source (30 October 2026)
 
 - **Italy (D2, D3, D4): the daily station history was rebuilt from the official MIMIT archive** (quarterly files 2026 Q2–Q3, IODL 2.0).
@@ -174,8 +187,8 @@ the method or the coverage changes. Every change of method is listed here.
 
   | market | fuel | n old | n new | mean old | mean new | median old | median new | p10 old | p10 new | p90 old | p90 new |
   |---|---|---|---|---|---|---|---|---|---|---|---|
-  | AT | Diesel | 2,298 | 1,412 | 2.1964 | 2.2319 | 2.2180 | 2.2290 | 2.0550 | 2.1820 | 2.2690 | 2.2838 |
-  | AT | Super 95 (E10) | 2,085 | 1,332 | 1.9142 | 1.9332 | 1.9190 | 1.9290 | 1.8490 | 1.8890 | 1.9790 | 1.9878 |
+  | AT | Diesel | 2,298 |  | 2.1964 |  | 2.2180 |  | 2.0550 |  | 2.2690 |  |
+  | AT | Super 95 (E10) | 2,085 |  | 1.9142 |  | 1.9190 |  | 1.8490 |  | 1.9790 |  |
   | ES | Diesel | 12,047 | 11,289 | 1.9164 | 1.9304 | 1.9590 | 1.9690 | 1.7490 | 1.7800 | 2.0490 | 2.0490 |
   | ES | LPG | 1,015 | 996 | 1.0940 | 1.0963 | 1.1250 | 1.1250 | 0.9390 | 0.9390 | 1.1890 | 1.1890 |
   | ES | Petrol 95 | 11,292 | 10,933 | 1.9201 | 1.9311 | 1.9690 | 1.9790 | 1.7651 | 1.7890 | 2.0540 | 2.0540 |
