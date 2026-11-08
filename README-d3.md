@@ -2,7 +2,7 @@
 
 > Copy of https://www.fuel-prices.eu/research/data/d3-regional-daily/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-11.2 · data built 2026-11-08T21:26Z · https://www.fuel-prices.eu/research/
+Version 2026-11.3 · data built 2026-11-08T22:42Z · https://www.fuel-prices.eu/research/
 
 **Version note (2026-11.2):** UK and Romania regional aggregates removed (source licence review, 8 Nov 2026). Their national daily
 statistics remain in D2. Details in the changelog.
@@ -42,7 +42,7 @@ This repository holds **samples only** (`sample/*.csv`, a few hundred rows of ea
 
 ## How to cite
 
-> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-11.2) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23875812
+> fuel-prices.eu (2026). *European fuel prices: EU Weekly Oil Bulletin panel (2005–) and daily national and regional averages* (Version 2026-11.3) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23875812
 
 This file describes one table of that record. Please cite the DOI, so that citations are not split between copies.
 

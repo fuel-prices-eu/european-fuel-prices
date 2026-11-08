@@ -154,4 +154,4 @@ date,country_code,region_type,region,fuel,fuel_family,fuel_label,basis,n,mean_eu
 # Statistics are unweighted: mean = arithmetic mean of the observations (one station or prefecture average = one observation; no weighting by sales volume). date = calendar day in Bucharest time (Europe/Bucharest, UTC+2/UTC+3): station feeds are snapshotted daily at 09:35-10:00 Bucharest time; Italy = day of the MIMIT daily file (prices in force at about 08:00 that day, published by MIMIT the next morning; since version 2026-09.7); Romania = last price read that day; Greece = day of the source bulletin.
 # Freshness: a station price counts on a day only if fuel-prices.eu read it from the source feed in the 48 hours before that day's snapshot (France 6 hours from 24 September 2026, United Kingdom 7 days); stations that left a feed are not carried forward (since version 2026-09.3).
 # Regional aggregates of the United Kingdom and Romania removed in version 2026-11.2 (source licence review, 8 November 2026); their national daily statistics remain in D2.
-# Version 2026-11.2, built 2026-11-08T21:26Z.
+# Version 2026-11.3, built 2026-11-08T22:42Z.

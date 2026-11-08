@@ -5,6 +5,16 @@ This copy contains D1–D3 only. The entries below are the changelog of the sour
 Versions are named `YYYY-MM` (a suffix such as `.1` marks a revision within the month). Within a month, files are rebuilt on schedule (D1 weekly, D2/D3 daily, D4 monthly); the version changes when
 the method or the coverage changes. Every change of method is listed here.
 
+## 2026-11.3 — source terms of the United Kingdom corrected (9 November 2026)
+
+- **United Kingdom (D2): `source_terms` no longer names an open licence.** It now says: "Source: Fuel Finder (Department for Energy
+  Security and Net Zero). No open licence is published for this source; fuel-prices.eu does not grant a licence for these data."
+  Since version 2026-09.5 it named the Open Government Licence v3.0, which we had read from the footer of GOV.UK pages; the developer
+  guidelines of the UK Fuel Finder service ask users not to redistribute raw API data, and no open licence for the prices is published
+  (read on 8 November 2026). The attribution statement of that licence is removed from the README, the CSV footer and the LICENSE file
+  of the copies. The UK rows stay in D2 as aggregates computed by fuel-prices.eu (mean, median, p10, p90, number of stations); no figure
+  changed, and no other market changed.
+
 ## 2026-11.2 — UK and Romania regional aggregates removed from D3 (8 November 2026)
 
 - **D3: UK and Romania regional aggregates removed (source licence review, 8 Nov 2026).** The regional rows of the United Kingdom
@@ -142,6 +152,7 @@ the method or the coverage changes. Every change of method is listed here.
   (Australia 371 D2 rows and 1,448 D3 rows; Türkiye 276 D2 rows and 22,632 D3 rows; Sweden 13,200 D2 rows, as of 26 September 2026). They may return in a later version once the terms of their sources are verified; the live pages of fuel-prices.eu are not affected.
 - **United Kingdom:** `source_terms` now states the licence of the UK Fuel Finder data, the Open Government Licence v3.0, with the attribution statement it
   requires ("Contains public sector information licensed under the Open Government Licence v3.0"); it wrongly said "No licence published by the source".
+  *Corrected in 2026-11.3: no open licence is published for the UK Fuel Finder prices; `source_terms` no longer names one.*
 - **Fuel codes no longer cross fuel families:** UK premium diesel is now `diesel_premium` (was `sp98`). New column **`fuel_family`**
   (`petrol`, `diesel`, `lpg`, `ethanol_e85`) in D2 and D3, for comparisons across markets. Figures unchanged.
 - **D3:** new column `flag` = `few_stations` when a region-day rests on 3 to 9 stations.
