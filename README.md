@@ -6,16 +6,16 @@ DOI: [10.5281/zenodo.23875812](https://doi.org/10.5281/zenodo.23875812) (this ve
 
 This repository holds the documentation and small samples; it **supplements** (IsSupplementTo) the Zenodo record `10.5281/zenodo.23875812`, which holds the full files. Please cite the DOI, not this repository.
 
-Free fuel price data for research from [fuel-prices.eu](https://www.fuel-prices.eu/research/): the European Commission's Weekly Oil Bulletin as one weekly panel since 2005 (D1), and daily national (D2) and regional (D3) statistics of pump prices computed from official national station feeds. Version **2026-11.3**, documentation built 2026-11-08T22:43Z (the build time of each table is in its README). The same files are published on https://www.fuel-prices.eu/research/ (with station-level data, D4, which is not included here).
+Free fuel price data for research from [fuel-prices.eu](https://www.fuel-prices.eu/research/): the European Commission's Weekly Oil Bulletin as one weekly panel since 2005 (D1), and daily national (D2) and regional (D3) statistics of pump prices computed from official national station feeds. Version **2026-11.3**, documentation built 2026-11-12T19:00Z (the build time of each table is in its README). The same files are published on https://www.fuel-prices.eu/research/ (with station-level data, D4, which is not included here).
 
 ## Data sets
 
 | set | content | period | rows | licence |
 |---|---|---|---|---|
-| D1 | EU Weekly Oil Bulletin panel: weekly national average prices of Euro-super 95 and diesel, all taxes included, 27 EU member states + United Kingdom (2005–2020) | 2005-01-03 to 2026-11-02 | 29,525 | CC BY 4.0 (European Commission data) |
-| D1 | EU27 and euro-area weighted averages (European Commission) | 2005-01-03 to 2026-11-02 | 2,182 | CC BY 4.0 (European Commission data) |
-| D2 | Daily national statistics (mean, median, p10, p90) from official national fuel-price feeds, 10 markets | 2024-07-03 to 2026-11-09 | 5,703 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
-| D3 | The same daily statistics per region, 305 regions in 4 countries | 2024-07-03 to 2026-11-08 | 204,400 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
+| D1 | EU Weekly Oil Bulletin panel: weekly national average prices of Euro-super 95 and diesel, all taxes included, 27 EU member states + United Kingdom (2005–2020) | 2005-01-03 to 2026-11-09 | 29,552 | CC BY 4.0 (European Commission data) |
+| D1 | EU27 and euro-area weighted averages (European Commission) | 2005-01-03 to 2026-11-09 | 2,184 | CC BY 4.0 (European Commission data) |
+| D2 | Daily national statistics (mean, median, p10, p90) from official national fuel-price feeds, 10 markets | 2024-07-03 to 2026-11-12 | 5,830 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
+| D3 | The same daily statistics per region, 305 regions in 4 countries | 2024-07-03 to 2026-11-11 | 208,528 | our statistics CC BY 4.0; source data keep their own terms (column `source_terms`) |
 
 ## Files
 
