@@ -6,7 +6,7 @@ authors:
   - name: "fuel-prices.eu"
     website: "https://www.fuel-prices.eu/"
 version: "2026-11.3"
-date-released: "2026-11-12"
+date-released: "2026-11-13"
 url: "https://www.fuel-prices.eu/research/"
 repository-artifact: "https://www.fuel-prices.eu/research/data/"
 repository-code: "https://github.com/fuel-prices-eu/european-fuel-prices"
