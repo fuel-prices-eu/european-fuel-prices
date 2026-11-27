@@ -2,7 +2,7 @@
 
 > Copy of https://www.fuel-prices.eu/research/data/d3-regional-daily/README.md , adapted to the files of this copy (sections "File formats" and "How to cite").
 
-Version 2026-11.3 · data built 2026-11-26T04:41Z · https://www.fuel-prices.eu/research/
+Version 2026-11.3 · data built 2026-11-27T04:41Z · https://www.fuel-prices.eu/research/
 
 **Version note (2026-11.2):** UK and Romania regional aggregates removed (source licence review, 8 Nov 2026). Their national daily
 statistics remain in D2. Details in the changelog.
@@ -14,10 +14,10 @@ figure rests on very few prices). **Our statistics are CC BY 4.0; the source dat
 
 | | |
 |---|---|
-| Period | 2024-07-03 to 2026-11-25 |
+| Period | 2024-07-03 to 2026-11-26 |
 | Countries | 4 |
 | Regions | 305 |
-| Rows | 226,411 |
+| Rows | 227,786 |
 | Frequency | daily |
 
 ## Regions
